@@ -1,0 +1,34 @@
+<div class="list">
+    <div data-ng-repeat="person in peopleData" class="person-item"
+         data-offscreen-placeholder="person.picture_height + 28 + 2*8 + 2*1">
+        <!-- Content -->
+        <div class="picture-box" data-ng-style="{'height' : person.picture_height + 28 + 'px'}">
+            <img src="http://placehold.it/200x{{person.picture_height + 28}}">
+        </div>
+        <div class="personal-data" data-ng-style="{'margin-top' : (person.picture_height + 28 - 128) / 2 + 'px'}">
+            <div class="person-name data-line">
+                <span class="caption">Name:</span>
+                <span data-ng-bind="person.first_name + '&nbsp;' + person.last_name"></span>
+            </div>
+            <div class="person-email data-line">
+                <span class="caption">Email:</span>
+                <span data-ng-bind="person.email"></span>
+            </div>
+            <div class="person-company data-line">
+                <span class="caption">Company:</span>
+                <span data-ng-bind="person.company"></span>
+            </div>
+            <div class="person-country data-line">
+                <span class="caption">Country:</span>
+                <span data-ng-bind="person.country"></span>
+            </div>
+            <div class="person-about data-line">
+                <span class="caption">About:</span>
+                <span data-ng-bind="person.about"></span>
+            </div>
+        </div>
+
+        <!-- Hack -->
+        <span class="ng-hide" data-ng-class=""></span>
+    </div>
+</div>

@@ -1,0 +1,72 @@
+body {
+    background-color: #eee;
+    font-family: 'Roboto', sans-serif;
+}
+
+h1 {
+    text-align: center;
+    margin-top: 70px;
+}
+
+.menu {
+    position: fixed;
+    top:0;
+    left:0;
+    right: 0;
+    height: 60px;
+    background-color: #ccc;
+    box-shadow: 0 0 20px -4px rgba(0, 0, 0, 0.75);
+}
+
+.description {
+    width: 680px;
+    text-align: justify;
+    text-justify: auto;
+    margin: auto auto 20px;
+}
+
+.person-item {
+    background-color: #fff;
+    border: 1px solid #aaa;
+    box-shadow: 0 0 20px -4px rgba(0, 0, 0, 0.75);
+    border-radius: 10px;
+    margin: 5px auto;
+    padding: 8px;
+    width: 780px;
+    box-sizing: border-box;
+}
+
+.picture-box {
+    float: left;
+    width: 200px;
+    background-color: #aaa;
+    display: inline-block;
+    margin-right: 10px;
+}
+
+.personal-data {
+    padding-left: 200px;
+}
+
+.data-line {
+    margin-bottom: 5px;
+}
+
+.personal-data .caption {
+    font-weight: lighter;
+    font-size: 12px;
+    color: #444;
+}
+
+.person-name {
+    font-size: 1.2em;
+    font-weight: bold;
+}
+
+.person-about {
+    display: inline-block;
+    max-width: 500px;
+    white-space: nowrap;
+    text-overflow: ellipsis;
+    overflow: hidden;
+}

@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>OffscreenPlaceholder - Virtual scrolling for AngularJs</title>
+    <link rel="stylesheet" href="styles/main.css">
+    <link href='http://fonts.googleapis.com/css?family=Roboto' rel='stylesheet' type='text/css'>
+    <link rel="icon" type="image/png" href="https://assets-cdn.github.com/favicon.ico">
+</head>
+<body data-ng-app="app">
+<!-- Menu -->
+<div class="menu"></div>
+
+<!-- Title -->
+<h1>OffscreenPlaceholder demo</h1>
+<div class="description">
+    Bellow is list of mock personal data containing 2000 elements. Each element is displayed inside custom template. As item is displayed it loads image from external source. Default options with immediate redraw and global placeholder are used. Only top and bottom boundaries are extended to 200px and 800px to achieve smoother scrolling.
+</div>
+
+<!-- Main view -->
+<div data-ng-view></div>
+
+<!-- Data -->
+<script src="scripts/data.js"></script>
+
+<!-- Libraries -->
+<script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.4.5/angular.min.js"></script>
+<script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.4.5/angular-route.min.js"></script>
+<!--<script src="https://cdn.rawgit.com/tsimeunovic/OffscreenPlaceholder/acd3b31d6b0d18c77c814a6cd2b28606b4f49a17/offscreenPlaceholder.js"></script>-->
+<script src="lib/offscreenPlaceholder.js"></script>
+
+<!-- Page scripts -->
+<script src="scripts/app.js"></script>
+</body>
+</html>
