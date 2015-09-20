@@ -6,12 +6,15 @@ body {
 h1 {
     text-align: center;
     margin-top: 70px;
+    white-space: nowrap;
+    text-overflow: ellipsis;
+    overflow: hidden;
 }
 
 .menu {
     position: fixed;
-    top:0;
-    left:0;
+    top: 0;
+    left: 0;
     right: 0;
     height: 60px;
     background-color: #ccc;
@@ -69,4 +72,47 @@ h1 {
     white-space: nowrap;
     text-overflow: ellipsis;
     overflow: hidden;
+}
+
+.menu a img {
+    float: left;
+    height: 80%;
+    margin-top: 7px;
+}
+
+body .menu h1 {
+    display: none;
+    white-space: nowrap;
+    text-overflow: ellipsis;
+    overflow: hidden;
+    margin-top: 15px;
+    margin-right: 50px;
+}
+
+body.scrolled .menu h1 {
+    display: block;
+}
+
+@media all and (max-width: 800px) {
+    .person-item {
+        width: 95%;
+    }
+
+    .description {
+        width: 95%;
+    }
+
+    .person-about {
+        max-width: 95%;
+    }
+}
+
+@media all and (max-width: 600px) {
+    .picture-box {
+        display: none;
+    }
+
+    .personal-data {
+        padding-left: 0;
+    }
 }

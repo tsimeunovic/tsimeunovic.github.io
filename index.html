@@ -5,16 +5,22 @@
     <title>OffscreenPlaceholder - Virtual scrolling for AngularJs</title>
     <link rel="stylesheet" href="styles/main.css">
     <link href='http://fonts.googleapis.com/css?family=Roboto' rel='stylesheet' type='text/css'>
-    <link rel="icon" type="image/png" href="https://assets-cdn.github.com/favicon.ico">
+    <link rel="icon" type="image/png" href="favicon.ico">
 </head>
 <body data-ng-app="app">
 <!-- Menu -->
-<div class="menu"></div>
+<div class="menu">
+    <a href="https://github.com/tsimeunovic/OffscreenPlaceholder">
+        <img src="https://assets-cdn.github.com/images/modules/logos_page/Octocat.png"/>
+    </a>
+    <h1>OffscreenPlaceholder demo</h1>
+</div>
 
 <!-- Title -->
 <h1>OffscreenPlaceholder demo</h1>
 <div class="description">
-    Bellow is list of mock personal data containing 2000 elements. Each element is displayed inside custom template. As item is displayed it loads image from external source. Default options with immediate redraw and global placeholder are used. Only top and bottom boundaries are extended to 200px and 800px to achieve smoother scrolling.
+    <p>OffscreenPlaceholder is AngularJs module for virtual scrolling. It only renders elements that are visible on screen and that way creates less watches and DOM elements. You no longer have to think about how many elements you can bind as thousands of them can work as smooth as dozen of them. Biggest advantages over other solutions are that elements can have different height and you don't have to place them in common parent with scrollbar. Read more on how to use and configure it on project <a href="https://github.com/tsimeunovic/OffscreenPlaceholder">GitHub</a> page.</p>
+    <p>Bellow example shows list of mock personal data containing 2000 elements. Each element is displayed inside custom template. As item is displayed it loads image from external source. Default options with immediate redraw and global placeholder are used. Only top and bottom boundaries are extended to 200px and 800px to achieve smoother scrolling.</p>
 </div>
 
 <!-- Main view -->
@@ -26,10 +32,10 @@
 <!-- Libraries -->
 <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.4.5/angular.min.js"></script>
 <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.4.5/angular-route.min.js"></script>
-<!--<script src="https://cdn.rawgit.com/tsimeunovic/OffscreenPlaceholder/acd3b31d6b0d18c77c814a6cd2b28606b4f49a17/offscreenPlaceholder.js"></script>-->
-<script src="lib/offscreenPlaceholder.js"></script>
+<script src="https://cdn.rawgit.com/tsimeunovic/OffscreenPlaceholder/88f4dd06c649d6ec3fd3c5cecf7b37d1fc3eb376/offscreenPlaceholder.min.js"></script>
 
 <!-- Page scripts -->
 <script src="scripts/app.js"></script>
+<script src="scripts/header.js"></script>
 </body>
 </html>
