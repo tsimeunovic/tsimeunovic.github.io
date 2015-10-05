@@ -18,6 +18,7 @@ h1 {
     left: 0;
     right: 0;
     height: 60px;
+    z-index: 10;
     background-color: #ccc;
     box-shadow: 0 0 20px -4px rgba(0, 0, 0, 0.75);
 }
@@ -29,14 +30,19 @@ h1 {
     margin: auto auto 20px;
 }
 
+.list {
+    width: 780px;
+    margin: auto;
+}
+
 .person-item {
+    width: 100%;
     background-color: #fff;
     border: 1px solid #aaa;
     box-shadow: 0 0 20px -4px rgba(0, 0, 0, 0.75);
     border-radius: 10px;
     margin: 5px auto;
     padding: 8px;
-    width: 780px;
     box-sizing: border-box;
 }
 
@@ -95,7 +101,7 @@ body.scrolled .menu h1 {
 }
 
 @media all and (max-width: 800px) {
-    .person-item {
+    .list {
         width: 95%;
     }
 

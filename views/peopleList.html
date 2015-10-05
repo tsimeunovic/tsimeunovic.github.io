@@ -1,6 +1,6 @@
 <div class="list">
     <div data-ng-repeat="person in peopleData" class="person-item"
-         data-offscreen-placeholder="person.picture_height + 28 + 2*8 + 2*1">
+         data-offscreen-placeholder="(person.picture_height + 28 + 2*8 + 2*1).toString() + ',11'">
         <!-- Content -->
         <div class="picture-box" data-ng-style="{'height' : person.picture_height + 28 + 'px'}">
             <img src="https://placehold.it/200x{{person.picture_height + 28}}">
